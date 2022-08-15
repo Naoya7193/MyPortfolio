@@ -1,0 +1,24 @@
+//コンテンツ幅（px）
+$sm: 720;
+$md: 768;
+$w800: 800;
+$lg: 1000;
+$xl: 1200;
+$xx: 1920;
+
+//ブレイクポイント
+$breakpoints: (
+    'sm': '(max-width: #{$sm}px)',
+    'md': '(max-width: #{$md}px)',
+    'lg': '(max-width: #{$lg}px)',
+    'xl': '(max-width: #{$xl}px)',
+    'xx': '(max-width: #{$xx}px)',
+    'pc_none': '(min-width: #{$xx}px)',
+) !default;
+
+//メディアクエリ
+@mixin mq($breakpoint: md) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
