@@ -35,7 +35,7 @@
 
 <body>
 
-<header class="l-header wrapper">
+<header class="l-header l-wrapper">
     <div class="l-header__icon">NAOYA</div>
     <nav class="l-header__nav">
         <ul class="l-header__list">
