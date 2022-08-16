@@ -2,6 +2,7 @@
 @use "../../fundation/color";
 
 // 共通化パーツ
+// 共通化-セクション
 %p-index-section{
     position: relative;
     padding-top: 70px;
@@ -30,6 +31,42 @@
         left: 0;
         width: 100%;
         height: 100px;
+    }
+}
+
+// 共通化-ボタン
+%p-index-button{
+    display: flex;
+    align-items: center;
+    padding: 15px 110px;
+    background-color: color.$c-white;
+    font-family: font.$noto-sans;
+    color: color.$c-base;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 0;
+    margin-left: auto;
+    position: relative;
+
+    &::before{
+        position: absolute;
+        content: "";
+        width: 30px;
+        height: 30px;
+        border-radius: 999px;
+        right: 22px;
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        right: calc(22px);
+        border-style: solid;
+        border-color: transparent transparent transparent color.$c-white;
+        border-width: 6px 10px 6px 8px;
+        z-index: 1;
     }
 }
 
@@ -109,6 +146,76 @@
     
     margin-top: 100px;
     margin-bottom: 100px;
+
+    &__container{
+        margin-top: 60px;
+        padding-bottom: 200px;
+    }
+
+    &__image{
+        width: 38%;
+        object-fit: cover;
+    }
+
+    &__card{
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        padding-right: 20px;
+        margin-bottom: 145px;
+
+        &:last-child{
+            margin-bottom: unset;
+        }
+
+        &-inner{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        &-heading{
+            font-family: font.$noto-sans;
+            font-size: 42px;
+            font-weight: bold;
+            line-height: 1.25;
+            background-image: linear-gradient(rgba(0 0 0/0) 70%, color.$c-yellow 0%);
+        }
+
+        &-text{
+            font-family: font.$noto-sans;
+            line-height: 1.78;
+            letter-spacing: .01em;
+            text-align: justify;
+        }
+    }
+
+    &__tool{
+        background-color: color.$c-white;
+        color: color.$c-base;
+        font-family: font.$noto-sans;
+        font-weight: bold;
+        padding: 25px 70px 35px 55px;
+        border-radius: 10px;
+        letter-spacing: .01em;
+
+        &-heading{
+            margin-bottom: 15px;
+            position: relative;
+
+            &::before{
+                position: absolute;
+                content: "";
+                border-radius: 999px;
+                background-color: color.$c-yellow;
+                width: 10px;
+                height: 10px;
+                top: 50%;
+                left: -18px;
+                transform: translateY(-50%);
+            }
+        }
+    }
 }
 
 // WORKS
@@ -117,6 +224,69 @@
     
     margin-top: 100px;
     margin-bottom: 100px;
+    padding-bottom: 90px;
+
+    &__inner{
+        margin-top: 65px;
+    }
+
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    &__card{
+        width: 44%;
+        position: relative;
+        padding-bottom: 60px;
+        margin-bottom: 85px;
+
+        &-heading{
+            font-family: font.$noto-sans;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: .02em;
+            margin-top: 12px;
+            padding-right: .7em;
+            background-image: linear-gradient(rgba(0 0 0/0) 70%, color.$c-red 0%);
+            width: fit-content
+        }
+    }
+
+    &__read-more{
+        position: absolute;
+        font-family: font.$noto-sans;
+        font-size: 20px;
+        font-weight: 500;
+        bottom: 0;
+        right: 0;
+        line-height: 1.5;
+        padding: 0 1.2em 0 .5em;
+        border-bottom: 2px solid color.$c-white;
+
+        &::after{
+            position: absolute;
+            content: "";
+            border-bottom: 2px solid color.$c-white;
+            width: 10px;
+            bottom: 0;
+            right: -8px;
+            transform: rotate(45deg) translateY(4px) translateX(-50%);
+        }
+    }
+
+    &__button-link{
+        @extend %p-index-button;
+
+        &--red{
+            &::before{
+                background-color: color.$c-red;
+            }
+        }
+    }
 }
 
 // ABOUT
@@ -125,4 +295,14 @@
     
     margin-top: 100px;
     margin-bottom: 200px;
+
+    &__button-link{
+        @extend %p-index-button;
+
+        &--green{
+            &::before{
+                background-color: color.$c-green;
+            }
+        }
+    }
 }
