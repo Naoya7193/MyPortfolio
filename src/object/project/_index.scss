@@ -1,6 +1,13 @@
 @use "../../fundation/font";
 @use "../../fundation/color";
 
+// 共通化パーツ
+%p-index-section{
+    border-top: 6px solid color.$c-white;
+    border-bottom: 6px solid color.$c-white;
+}
+
+// MV
 .p-index-mv{
     display: flex;
     align-items: flex-end;
@@ -21,4 +28,36 @@
         margin-bottom: 125px;
         margin-left: 57px;
     }
+}
+
+// MASSAGE
+.p-index-message{
+    @extend %p-index-section;
+
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+// SKILL
+.p-index-skill{
+    @extend %p-index-section;
+    
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+// WORKS
+.p-index-works{
+    @extend %p-index-section;
+    
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+// ABOUT
+.p-index-about{
+    @extend %p-index-section;
+    
+    margin-top: 100px;
+    margin-bottom: 200px;
 }

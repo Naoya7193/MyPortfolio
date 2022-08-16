@@ -27,7 +27,7 @@
 
 <!-- SKILL -->
 <section class="p-index-skill l-wrapper">
-    <div class="c-section-heading">
+    <div class="c-section-heading c-section-heading--yellow">
         <p class="c-section-heading__japanese">スキル</p>
         <h2 class="c-section-heading__english">SKILL</h2>
     </div>
@@ -66,7 +66,7 @@
 
 <!-- WORKS -->
 <section class="p-index-works l-wrapper">
-    <div class="c-section-heading">
+    <div class="c-section-heading c-section-heading--red">
         <p class="c-section-heading__japanese">制作物</p>
         <h2 class="c-section-heading__english">WORKS</h2>
     </div>
@@ -106,7 +106,7 @@
 
 <!-- ABOUT -->
 <section class="p-index-about l-wrapper">
-    <div class="c-section-heading">
+    <div class="c-section-heading c-section-heading--green">
         <p class="c-section-heading__japanese">私について</p>
         <h2 class="c-section-heading__english">ABOUT</h2>
     </div>
