@@ -1,0 +1,35 @@
+@use "../fundation/font";
+
+.l-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__icon{
+        font-size: 46px;
+        font-weight: bold;
+    }
+
+    &__list{
+        display: flex;
+        padding: 70px 0 50px;
+        gap: 80px;
+        line-height: 1;
+    }
+
+    &__item{
+        text-align: center;
+    }
+
+    &__item-english{
+        font-size: 26px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    &__item-japanese{
+        font-family: font.$noto-sans;
+        font-weight: bold;
+        font-size: 14px;
+    }
+}
