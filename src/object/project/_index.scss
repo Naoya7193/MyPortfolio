@@ -1,0 +1,24 @@
+@use "../../fundation/font";
+@use "../../fundation/color";
+
+.p-index-mv{
+    display: flex;
+    align-items: flex-end;
+    background-image: url(../image/top-mv-image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 1267/665;
+
+    &__heading{
+        display: inline-block;
+        font-size: 80px;
+        padding: 0 1em 0 .5em;
+        font-weight: bold;
+        color: color.$c-base;
+        line-height: 1.2;
+        background-color: rgba(255, 255, 255, 0.92);
+        margin-bottom: 125px;
+        margin-left: 57px;
+    }
+}
