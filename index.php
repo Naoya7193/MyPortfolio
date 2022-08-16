@@ -2,10 +2,8 @@
 
 <!-- MV -->
 <section class="p-index-mv l-wrapper">
-    <h1 class="p-index-mv__heading">
-        Naoya<br>
-        Fujimoto
-    </h1>
+    <p class="p-index-mv__heading p-index-mv__heading-first">Naoya</p>
+    <p class="p-index-mv__heading p-index-mv__heading-last">Fujimoto</p>
 </section>
 
 <!-- MESSAGE -->
