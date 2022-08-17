@@ -1,0 +1,15 @@
+@use "../fundation/font";
+@use "../fundation/color";
+
+.l-footer{
+    width: 100%;
+    background-color: color.$c-white;
+    padding: 12px 0 10px;
+
+    &__copylight{
+        font-family: font.$noto-sans;
+        font-weight: bold;
+        text-align: center;
+        color: color.$c-base;
+    }
+}
