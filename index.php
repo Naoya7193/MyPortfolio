@@ -8,7 +8,7 @@
 
 <!-- MESSAGE -->
 <section class="p-index-message l-wrapper">
-    <div class="c-section-heading">
+    <div class="c-section-heading" id="message">
         <p class="c-section-heading__japanese">メッセージ</p>
         <h2 class="c-section-heading__english">MESSAGE</h2>
     </div>
@@ -25,7 +25,7 @@
 
 <!-- SKILL -->
 <section class="p-index-skill l-wrapper">
-    <div class="c-section-heading c-section-heading--yellow">
+    <div class="c-section-heading c-section-heading--yellow" id="skill">
         <p class="c-section-heading__japanese">スキル</p>
         <h2 class="c-section-heading__english">SKILL</h2>
     </div>
@@ -72,27 +72,35 @@
     <div class="p-index-works__inner">
         <div class="p-index-works__container">
             <div class="p-index-works__card">
-                <img src="./image/top-MK.png" alt="株式会社エムケーのサムネイル" class="p-index-works__card-thumbnail">
-                <h3 class="p-index-works__card-heading">株式会社エムケー</h3>
-                <a href="" class="p-index-works__read-more">READ MORE</a>
+                <a href="./works/#MK">
+                    <img src="./image/top-MK.png" alt="株式会社エムケーのサムネイル" class="p-index-works__card-thumbnail">
+                    <h3 class="p-index-works__card-heading">株式会社エムケー</h3>
+                    <p class="p-index-works__read-more">READ MORE</p>
+                </a>
             </div>
 
             <div class="p-index-works__card">
-                <img src="./image/top-kitahama.png" alt="キタハマ総合法律事務所のサムネイル" class="p-index-works__card-thumbnail">
-                <h3 class="p-index-works__card-heading">キタハマ総合法律事務所</h3>
-                <a href="" class="p-index-works__read-more">READ MORE</a>
+                <a href="./works/#kitahama">
+                    <img src="./image/top-kitahama.png" alt="キタハマ総合法律事務所のサムネイル" class="p-index-works__card-thumbnail">
+                    <h3 class="p-index-works__card-heading">キタハマ総合法律事務所</h3>
+                    <p class="p-index-works__read-more">READ MORE</p>
+                </a>
             </div>
 
             <div class="p-index-works__card">
-                <img src="./image/top-theplacenamba.png" alt="THE PLACE NAMBAのサムネイル" class="p-index-works__card-thumbnail">
-                <h3 class="p-index-works__card-heading">THE PLACE NAMBA</h3>
-                <a href="" class="p-index-works__read-more">READ MORE</a>
+                <a href="./works/#theplacenamba">
+                    <img src="./image/top-theplacenamba.png" alt="THE PLACE NAMBAのサムネイル" class="p-index-works__card-thumbnail">
+                    <h3 class="p-index-works__card-heading">THE PLACE NAMBA</h3>
+                    <p class="p-index-works__read-more">READ MORE</p>
+                </a>
             </div>
 
             <div class="p-index-works__card">
-                <img src="./image/top-fujimetal.png" alt="株式会社ふじ芳金属加工のサムネイル" class="p-index-works__card-thumbnail">
-                <h3 class="p-index-works__card-heading">株式会社ふじ芳金属加工</h3>
-                <a href="" class="p-index-works__read-more">READ MORE</a>
+                <a href="./works/#fujitetal">
+                    <img src="./image/top-fujimetal.png" alt="株式会社ふじ芳金属加工のサムネイル" class="p-index-works__card-thumbnail">
+                    <h3 class="p-index-works__card-heading">株式会社ふじ芳金属加工</h3>
+                    <p class="p-index-works__read-more">READ MORE</p>
+                </a>
             </div>
         </div>
     </div>

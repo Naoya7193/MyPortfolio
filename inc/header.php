@@ -36,32 +36,42 @@
 <body>
 
 <header class="l-header l-wrapper">
-    <div class="l-header__icon">NAOYA</div>
+    <div class="l-header__icon">
+        <a href="./">NAOYA</a>
+    </div>
     <nav class="l-header__nav">
         <ul class="l-header__list">
             <li class="l-header__link">
+                <a href="#message">
                 <ul class="l-header__item">
                     <li class="l-header__item-english">MESSAGE</li>
                     <li class="l-header__item-japanese">メッセージ</li>
                 </ul>
+                </a>
             </li>
             <li class="l-header__link">
+                <a href="#skill">
                 <ul class="l-header__item">
                     <li class="l-header__item-english">SKILL</li>
                     <li class="l-header__item-japanese">スキル</li>
                 </ul>
+                </a>
             </li>
             <li class="l-header__link">
+                <a href="./works">
                 <ul class="l-header__item">
                     <li class="l-header__item-english">WORKS</li>
                     <li class="l-header__item-japanese">制作物</li>
                 </ul>
+                </a>
             </li>
             <li class="l-header__link">
+                <a href="./about">
                 <ul class="l-header__item">
                     <li class="l-header__item-english">ABOUT</li>
                     <li class="l-header__item-japanese">私について</li>
                 </ul>
+                </a>
             </li>
         </ul>
     </nav>

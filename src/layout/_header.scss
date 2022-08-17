@@ -1,14 +1,25 @@
+@use "../fundation/color";
 @use "../fundation/font";
+
 
 .l-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    // position: sticky;
+    top: 0;
+    background-color: color.$c-base;
+    z-index: 999;
 
     &__icon{
         font-size: 46px;
         font-weight: bold;
         letter-spacing: .01em;
+
+        &:hover{
+            opacity: 0.6;
+            transition: .3s opacity;
+        }
     }
 
     &__list{
@@ -16,6 +27,14 @@
         padding: 50px 0 40px;
         gap: 80px;
         line-height: 1;
+    }
+
+    &__link{
+        &:hover{
+            color: color.$c-yellow;
+            transition: .3s color;
+        }
+
     }
 
     &__item{

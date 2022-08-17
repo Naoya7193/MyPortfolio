@@ -48,6 +48,16 @@
     margin-left: auto;
     position: relative;
 
+    transition: .1s all;
+
+    &:hover{
+        color: color.$c-white;
+
+        &::before{
+            background-color: color.$c-white;
+        }
+    }
+
     &::before{
         position: absolute;
         content: "";
@@ -187,6 +197,8 @@
             line-height: 1.78;
             letter-spacing: .01em;
             text-align: justify;
+            margin-top: 35px;
+            margin-bottom: 35px;
         }
     }
 
@@ -244,6 +256,16 @@
         padding-bottom: 60px;
         margin-bottom: 85px;
 
+        &-thumbnail{
+            width: 100%;
+            object-fit: contain;
+            transition: .3s transform;
+
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+
         &-heading{
             font-family: font.$noto-sans;
             font-size: 28px;
@@ -267,6 +289,11 @@
         line-height: 1.5;
         padding: 0 1.2em 0 .5em;
         border-bottom: 2px solid color.$c-white;
+        transition: .3s opacity;
+
+        &:hover{
+            opacity: .6;
+        }
 
         &::after{
             position: absolute;
@@ -283,6 +310,14 @@
         @extend %p-index-button;
 
         &--red{
+            &:hover{
+                background-color: color.$c-red;
+
+                &::after{
+                    border-color: transparent transparent transparent color.$c-red;
+                }
+            }
+
             &::before{
                 background-color: color.$c-red;
             }
@@ -337,6 +372,14 @@
         @extend %p-index-button;
 
         &--green{
+            &:hover{
+                background-color: color.$c-green;
+
+                &::after{
+                    border-color: transparent transparent transparent color.$c-green;
+                }
+            }
+
             &::before{
                 background-color: color.$c-green;
             }
