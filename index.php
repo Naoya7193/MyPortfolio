@@ -111,7 +111,7 @@
 
     <div class="p-index-about__inner">
         <div class="p-index-about__card">
-            <img src="" alt="アイコン画像" class="p-index-about__card-image">
+            <img src="./image/profile-image.png" alt="アイコン画像" class="p-index-about__card-image">
             <div class="p-index-about__card-inner">
                 <h3 class="p-index-about__card-heading">Naoya Fujimoto</h3>
                 <p class="p-index-about__card-text">

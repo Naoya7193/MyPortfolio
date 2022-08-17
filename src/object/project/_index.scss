@@ -251,7 +251,8 @@
             letter-spacing: .02em;
             margin-top: 12px;
             padding-right: .7em;
-            background-image: linear-gradient(rgba(0 0 0/0) 70%, color.$c-red 0%);
+            line-height: 1.6;
+            background-image: linear-gradient(rgba(0 0 0/0) 72%, color.$c-red 0%);
             width: fit-content
         }
     }
@@ -295,6 +296,42 @@
     
     margin-top: 100px;
     margin-bottom: 200px;
+    padding-bottom: 90px;
+
+    &__card{
+        display: flex;
+        justify-content: space-between;
+        width: 78%;
+        margin: 0 auto;
+        margin-top: 65px;
+        margin-bottom: 50px;
+
+        &-image{
+            width: 35%;
+            object-fit: contain;
+        }
+
+        &-inner{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        &-heading{
+            font-size: 62px;
+            line-height: 1.2;
+            padding-right: .5em;
+            letter-spacing: .01em;
+            font-weight: bold;background-image: linear-gradient(rgba(0 0 0/0) 75%, color.$c-green 50%);
+        }
+
+        &-text{
+            font-family: font.$noto-sans;
+            font-size: 20px;
+            letter-spacing: .02em;
+            line-height: 1.9;
+        }
+    }
 
     &__button-link{
         @extend %p-index-button;
