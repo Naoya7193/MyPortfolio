@@ -42,7 +42,7 @@
     <nav class="l-header__nav">
         <ul class="l-header__list">
             <li class="l-header__link">
-                <a href="#message">
+                <a href="./#message">
                 <ul class="l-header__item">
                     <li class="l-header__item-english">MESSAGE</li>
                     <li class="l-header__item-japanese">メッセージ</li>
@@ -50,7 +50,7 @@
                 </a>
             </li>
             <li class="l-header__link">
-                <a href="#skill">
+                <a href="./#skill">
                 <ul class="l-header__item">
                     <li class="l-header__item-english">SKILL</li>
                     <li class="l-header__item-japanese">スキル</li>
