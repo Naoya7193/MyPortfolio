@@ -1,6 +1,7 @@
 @use "../../fundation/font";
 @use "../../fundation/color";
 
+// MV
 .p-works-mv{
     display: flex;
     align-items: flex-end;
@@ -28,6 +29,7 @@
     }
 }
 
+// ARCHIVE
 .p-works-archive{
     border-bottom: 4px dashed color.$c-white;
 
@@ -119,6 +121,7 @@
     }
 }
 
+// CONTENT
 .p-works-content{
     padding-top: 100px;
 
