@@ -4,10 +4,11 @@
 .l-footer{
     width: 100%;
     background-color: color.$c-white;
-    padding: 12px 0 10px;
+    padding: .6em 0 .6em;
 
     &__copylight{
         font-family: font.$noto-sans;
+        font-size: clamp(14px,1.3vw,18px);
         font-weight: bold;
         text-align: center;
         color: color.$c-base;

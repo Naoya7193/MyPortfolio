@@ -8,7 +8,7 @@
 // 共通化-セクション
 %p-index-section{
     position: relative;
-    padding-top: 70px;
+    padding-top: clamp(40px,5.1vw,70px);
 
     &::before{
         position: absolute;
@@ -21,6 +21,7 @@
         left: 0;
         width: 100%;
         height: 100px;
+        z-index: -1;
     }
 
     &::after{
@@ -34,6 +35,7 @@
         left: 0;
         width: 100%;
         height: 100px;
+        z-index: -1;
     }
 }
 
@@ -41,11 +43,11 @@
 %p-index-button{
     display: flex;
     align-items: center;
-    padding: 15px 110px;
+    padding: 0.625em 4.6em;
     background-color: color.$c-white;
     font-family: font.$noto-sans;
     color: color.$c-base;
-    font-size: 24px;
+    font-size: clamp(18px,1.8vw,24px);
     font-weight: bold;
     margin-right: 0;
     margin-left: auto;
@@ -64,8 +66,8 @@
     &::before{
         position: absolute;
         content: "";
-        width: 30px;
-        height: 30px;
+        width: clamp(26px,2.5vw,30px);
+        height: clamp(26px,2.5vw,30px);
         border-radius: 999px;
         right: 22px;
     }
@@ -78,7 +80,7 @@
         right: calc(22px);
         border-style: solid;
         border-color: transparent transparent transparent color.$c-white;
-        border-width: 6px 10px 6px 8px;
+        border-width: clamp(5px,.9vw,6px) clamp(8px,.9vw,10px) clamp(5px,.9vw,6px) clamp(7px,1vw,8px);
         z-index: 1;
     }
 }
@@ -98,7 +100,7 @@
         width: fit-content;
         background-color: rgba(255, 255, 255, 0.92);
         padding: 0 1em 0 .5em;
-        font-size: 80px;
+        font-size: 5.5vw;
         font-weight: bold;
         color: color.$c-base;
         line-height: 1.2;
@@ -115,7 +117,7 @@
 
         &-last{
             color: color.$c-base;
-            margin-bottom: 125px;
+            margin-bottom: clamp(40px,8vw,125px);
 
             &::first-letter{
                 color: color.$c-blue-lighter;
@@ -128,16 +130,16 @@
 .p-index-message{
     @extend %p-index-section;
 
-    margin-top: 80px;
-    margin-bottom: 100px;
+    margin-top: clamp(60px,5.7vw,80px);
+    margin-bottom: clamp(55px,7.2vw,100px);
 
     &__copy{
         font-family: font.$noto-sans;
-        font-size: 42px;
+        font-size: clamp(26px,4vw,42px);
         font-weight: bold;
         padding-right: .5em;
-        margin-top: 65px;
-        margin-bottom: 90px;
+        margin-top: clamp(30px,4.7vw,65px);
+        margin-bottom: clamp(60px,6.5vw,90px);
         width: fit-content;
         line-height: 1.5;
         background-image: linear-gradient(rgba(0 0 0/0) 70%, color.$c-blue-lighter 0%);
@@ -145,24 +147,23 @@
 
     &__text{
         font-family: font.$noto-sans;
-        font-size: 22px;
+        font-size: clamp(16px,1.8vw,22px);
         font-weight: 400;
         line-height: 2.1;
-        margin-left: 20px;
-        padding-bottom: 170px;
+        margin-left: clamp(10px,1.5vw,20px);
+        padding-bottom: clamp(80px,12.2vw,170px);
     }
 }
 
 // SKILL
 .p-index-skill{
     @extend %p-index-section;
-    
-    margin-top: 100px;
-    margin-bottom: 100px;
+
+    margin-bottom: clamp(55px,7.2vw,100px);
 
     &__container{
-        margin-top: 60px;
-        padding-bottom: 200px;
+        margin-top: clamp(20px,4.3vw,60px);
+        padding-bottom: clamp(120px,14.3vw,200px);
     }
 
     &__image{
@@ -173,9 +174,9 @@
     &__card{
         display: flex;
         justify-content: space-between;
-        gap: 50px;
+        gap: clamp(20px,3.6vw,50px);
         padding-right: 20px;
-        margin-bottom: 145px;
+        margin-bottom: clamp(60px,10.4vw,145px);
 
         &:last-child{
             margin-bottom: unset;
@@ -189,7 +190,7 @@
 
         &-heading{
             font-family: font.$noto-sans;
-            font-size: 42px;
+            font-size: clamp(32px,3.2vw,42px);
             font-weight: bold;
             line-height: 1.25;
             background-image: linear-gradient(rgba(0 0 0/0) 70%, color.$c-yellow 0%);
@@ -200,8 +201,9 @@
             line-height: 1.78;
             letter-spacing: .01em;
             text-align: justify;
-            margin-top: 35px;
-            margin-bottom: 35px;
+            margin-top: clamp(18px,2.5vw,35px);
+            margin-bottom: clamp(18px,2.5vw,35px);
+            font-size: clamp(14px,1.3vw,18px);
         }
     }
 
@@ -210,13 +212,15 @@
         color: color.$c-base;
         font-family: font.$noto-sans;
         font-weight: bold;
-        padding: 25px 70px 35px 55px;
+        padding: clamp(16px,1.8vw,25px) clamp(20px,3.6vw,50px) clamp(16px, 2.2vw, 30px) clamp(20px,3.6vw,50px);
         border-radius: 10px;
         letter-spacing: .01em;
+        font-size: clamp(14px,1.3vw,18px);
 
         &-heading{
             margin-bottom: 15px;
             position: relative;
+            margin: 0 auto;
 
             &::before{
                 position: absolute;
@@ -226,7 +230,7 @@
                 width: 10px;
                 height: 10px;
                 top: 50%;
-                left: -18px;
+                left: clamp(-18px,-1.25vw,-13px);
                 transform: translateY(-50%);
             }
         }
@@ -237,12 +241,11 @@
 .p-index-works{
     @extend %p-index-section;
     
-    margin-top: 100px;
-    margin-bottom: 100px;
-    padding-bottom: 90px;
+    margin-bottom: clamp(55px,7.2vw,100px);
+    padding-bottom: clamp(45px,6.5vw,90px);
 
     &__inner{
-        margin-top: 65px;
+        margin-top: clamp(20px, 4.3vw, 60px);
     }
 
     &__container{
@@ -251,13 +254,15 @@
         justify-content: space-between;
         width: 90%;
         margin: 0 auto;
+        min-width: 688px;
     }
 
     &__card{
         width: 44%;
         position: relative;
-        padding-bottom: 60px;
-        margin-bottom: 85px;
+        padding-bottom: clamp(45px,4.3vw,60px);
+        margin-bottom: clamp(48px,6.1vw,85px);
+        min-width: 320px;
 
         &-thumbnail{
             width: 100%;
@@ -271,7 +276,7 @@
 
         &-heading{
             font-family: font.$noto-sans;
-            font-size: 28px;
+            font-size: clamp(22px,2vw,28px);
             font-weight: bold;
             letter-spacing: .02em;
             margin-top: 12px;
@@ -285,7 +290,7 @@
     &__read-more{
         position: absolute;
         font-family: font.$noto-sans;
-        font-size: 20px;
+        font-size: clamp(16px,1.5vw,20px);
         font-weight: 500;
         bottom: 0;
         right: 0;
@@ -332,17 +337,18 @@
 .p-index-about{
     @extend %p-index-section;
     
-    margin-top: 100px;
-    margin-bottom: 200px;
-    padding-bottom: 90px;
+    margin-bottom: clamp(140px,14.3vw,200px);
+    padding-bottom: clamp(45px,6.5vw,90px);
 
     &__card{
         display: flex;
         justify-content: space-between;
-        width: 78%;
+        width: clamp(640px,68.5vw,960px);
         margin: 0 auto;
-        margin-top: 65px;
-        margin-bottom: 50px;
+        margin-top: clamp(35px,4.7vw,65px);
+        margin-bottom: clamp(30px,3.6vw,50px);
+        min-width: 648px;
+        gap: 40px;
 
         &-image{
             width: 35%;
@@ -356,7 +362,7 @@
         }
 
         &-heading{
-            font-size: 62px;
+            font-size: clamp(40px,4.5vw,62px);
             line-height: 1.2;
             padding-right: .5em;
             letter-spacing: .01em;
@@ -366,7 +372,8 @@
 
         &-text{
             font-family: font.$noto-sans;
-            font-size: 20px;
+            white-space: nowrap;
+            font-size: clamp(14px,1.5vw,20px);
             letter-spacing: .02em;
             line-height: 1.9;
         }

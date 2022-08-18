@@ -4,8 +4,9 @@
 // セクションタイトル
 .c-section-heading{
     display: inline-block;
-    padding-bottom: 65px;
+    padding-bottom: clamp(50px,4.7vw,65px);
     padding-left: 50px;
+    padding-right: 50px;
     background-image: url(../image/h2-rounds-blue.svg);
     background-size: contain;
     background-position: left top;
@@ -13,7 +14,7 @@
 
     &__japanese{
         font-family: font.$noto-sans;
-        font-size: 22px;
+        font-size: clamp(16px,2vw,22px);
         font-weight: 500;
         text-align: end;
         line-height: 1;
@@ -21,7 +22,7 @@
     }
 
     &__english{
-        font-size: 72px;
+        font-size: clamp(40px,6vw,72px);
         font-weight: bold;
         letter-spacing: .01em;
         line-height: 1;
