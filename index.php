@@ -72,7 +72,7 @@
     <div class="p-index-works__inner">
         <div class="p-index-works__container">
             <div class="p-index-works__card">
-                <a href="./works/#MK">
+                <a href="./works#MK">
                     <img src="./image/top-MK.png" alt="株式会社エムケーのサムネイル" class="p-index-works__card-thumbnail">
                     <h3 class="p-index-works__card-heading">株式会社エムケー</h3>
                     <p class="p-index-works__read-more">READ MORE</p>
@@ -80,7 +80,7 @@
             </div>
 
             <div class="p-index-works__card">
-                <a href="./works/#kitahama">
+                <a href="./works#kitahama">
                     <img src="./image/top-kitahama.png" alt="キタハマ総合法律事務所のサムネイル" class="p-index-works__card-thumbnail">
                     <h3 class="p-index-works__card-heading">キタハマ総合法律事務所</h3>
                     <p class="p-index-works__read-more">READ MORE</p>
@@ -88,7 +88,7 @@
             </div>
 
             <div class="p-index-works__card">
-                <a href="./works/#theplacenamba">
+                <a href="./works#theplacenamba">
                     <img src="./image/top-theplacenamba.png" alt="THE PLACE NAMBAのサムネイル" class="p-index-works__card-thumbnail">
                     <h3 class="p-index-works__card-heading">THE PLACE NAMBA</h3>
                     <p class="p-index-works__read-more">READ MORE</p>
@@ -96,7 +96,7 @@
             </div>
 
             <div class="p-index-works__card">
-                <a href="./works/#fujitetal">
+                <a href="./works#fujimetal">
                     <img src="./image/top-fujimetal.png" alt="株式会社ふじ芳金属加工のサムネイル" class="p-index-works__card-thumbnail">
                     <h3 class="p-index-works__card-heading">株式会社ふじ芳金属加工</h3>
                     <p class="p-index-works__read-more">READ MORE</p>

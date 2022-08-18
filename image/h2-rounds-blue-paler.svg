@@ -1,0 +1,14 @@
+<svg id="h2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="306" height="180" viewBox="0 0 306 180">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="306" height="180" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="リピートグリッド_1" data-name="リピートグリッド 1" clip-path="url(#clip-path)">
+    <g id="グループ_1" data-name="グループ 1" transform="translate(-57 -979)">
+      <circle id="楕円形_1" data-name="楕円形 1" cx="90" cy="90" r="90" transform="translate(57 979)" fill="#6d82a1"/>
+      <circle id="楕円形_2" data-name="楕円形 2" cx="25" cy="25" r="25" transform="translate(256 1109)" fill="#6d82a1"/>
+      <circle id="楕円形_3" data-name="楕円形 3" cx="10" cy="10" r="10" transform="translate(343 1109)" fill="#6d82a1"/>
+    </g>
+  </g>
+</svg>

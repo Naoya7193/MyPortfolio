@@ -1,3 +1,5 @@
+@use "../fundation/color";
+
 .l-wrapper{
     width: 88%;
     margin: 0 auto;
@@ -6,4 +8,16 @@
 .l-wrapper-sm{
     width: 74%;
     margin: 0 auto;
+}
+
+.l-text__blue-lighter{
+    color: color.$c-blue-lighter;
+}
+
+.l-text__yellow{
+    color: color.$c-yellow;
+}
+
+.l-text__blue-darker{
+    color: color.$c-blue-darker;
 }

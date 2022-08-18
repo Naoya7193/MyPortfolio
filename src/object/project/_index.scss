@@ -1,6 +1,9 @@
 @use "../../fundation/font";
 @use "../../fundation/color";
 
+@forward "works";
+// @forward "about";
+
 // 共通化パーツ
 // 共通化-セクション
 %p-index-section{
