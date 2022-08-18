@@ -8,7 +8,7 @@
 </section>
 
 <!-- PROFILE -->
-<div class="p-about-profile l-wrapper">
+<div class="p-about-profile l-wrapper-sm">
     <div class="p-about-profile__card">
         <img src="./image/profile-image.png" alt="アイコン画像" class="p-about-profile__card-image">
         <div class="p-about-profile__card-inner">
@@ -35,7 +35,7 @@
         <div class="p-about-motto__card">
             <div class="p-about-motto__card-heading">
                 <div class="p-about-motto__card-number">01</div>
-                <h3 class="p-about-card__card-title">伝える</h3>
+                <h3 class="p-about-motto__card-title">伝える</h3>
             </div>
             <img src="../image/about-telling.png" alt="伝えるイラスト" class="p-about-motto__card-image p-about-motto__card-image--red">
             <p class="p-about-motto__card-text">前提知識を共有していない相手にも正しく意図を説明できます。また人前で自分の考えを話すことを得意としています。</p>
@@ -44,7 +44,7 @@
         <div class="p-about-motto__card">
             <div class="p-about-motto__card-heading">
                 <div class="p-about-motto__card-number">02</div>
-                <h3 class="p-about-card__card-title">聞く</h3>
+                <h3 class="p-about-motto__card-title">聞く</h3>
             </div>
             <img src="../image/about-hearing.png" alt="聞くイラスト" class="p-about-motto__card-image p-about-motto__card-image--yellow">
             <p class="p-about-motto__card-text">相手の意見を尊重し、考えの意図を理解することに努めます。また話し手が快く話せる姿勢を意識しています。</p>
@@ -53,7 +53,7 @@
         <div class="p-about-motto__card">
             <div class="p-about-motto__card-heading">
                 <div class="p-about-motto__card-number">03</div>
-                <h3 class="p-about-card__card-title">考える</h3>
+                <h3 class="p-about-motto__card-title">考える</h3>
             </div>
             <img src="../image/about-thinking.png" alt="考えるイラスト" class="p-about-motto__card-image p-about-motto__card-image--blue">
             <p class="p-about-motto__card-text">お互いの考え方の違いを明確にした上で最善は何か検討し、多くの人が納得のいく方法の提案を目指します。</p>
@@ -159,10 +159,10 @@
             </div>
         </div>
 
-        <div class="p-about-career__box p-about-career__box--yellow">
-            <div class="p-about-career__year">VISION</div>
+        <div class="p-about-career__box">
+            <div class="p-about-career__year p-about-career__year--yellow">VISION</div>
             <div class="p-about-career__inner">
-                <h3 class="p-about-career__box-heading">Webエンジニアを目指して勉強中！</h3>
+                <h3 class="p-about-career__box-heading p-about-career__box-heading--yellow">Webエンジニアを目指して勉強中！</h3>
                 <p class="p-about-career__box-text">Webの開発に必要な基盤知識を学習するために入校しました。現在は全てのカリキュラムを修了し、転職活動と並行してWebスクールのメンターとしてコーディングのフィードバックをお手伝いしています。</p>
             </div>
         </div>

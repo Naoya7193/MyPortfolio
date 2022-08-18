@@ -31,15 +31,16 @@
 
 // PROFILE
 .p-about-profile{
+    padding-bottom: 120px;
+    margin-bottom: 100px;
+    border-bottom: 4px dashed color.$c-white;
+
     &__card{
         display: flex;
         justify-content: space-between;
-        width: 78%;
+        width: 90%;
         margin: 0 auto;
         margin-top: 65px;
-        padding-bottom: 120px;
-        margin-bottom: 100px;
-        border-bottom: 4px dashed color.$c-white;
 
         &-image{
             width: 35%;
@@ -67,4 +68,179 @@
             line-height: 1.9;
         }
     }
+}
+
+// MOTTO
+.p-about-motto{
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+    border-bottom: 4px dashed color.$c-white;
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 55px;
+    }
+
+    &__card{
+        width: 30%;
+
+        &-heading{
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        &-number{
+            font-family: font.$helvetica;
+            font-size: 27px;
+            font-weight: bold;
+            line-height: 1;
+            background-color: color.$c-white;
+            color: color.$c-base;
+            padding: 10px;
+        }
+
+        &-title{
+            font-family: font.$noto-sans;
+            font-size: 30px;
+            font-weight: bold;
+            margin-left: .9em;
+        }
+
+        &-image{
+            margin-bottom: 40px;
+
+            &--red{
+                border: 8px solid color.$c-red;
+            }
+            &--yellow{
+                border: 8px solid color.$c-yellow;
+            }
+            &--blue{
+                border: 8px solid color.$c-blue-paler;
+            }
+        }
+
+        &-text{
+            font-family: font.$noto-sans;
+            font-size: 16px;
+            letter-spacing: .02em;
+            line-height: 2;
+            text-align: justify;
+        }
+    }
+}
+
+// CAREER
+.p-about-career{
+    padding-bottom: 200px;
+
+    &__container{
+        margin-top: 70px;
+    }
+
+    &__box{
+        display: flex;
+        margin-bottom: 65px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    &__year{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: font.$helvetica;
+        font-size: 22px;
+        font-weight: bold;
+        color: color.$c-blue-paler;
+        background-color: color.$c-white;
+        width: 68px;
+        height: 68px;
+        border: 3px solid color.$c-blue-paler;
+        position: relative;
+
+        &--yellow{
+            font-size: 16px;
+            border-color: color.$c-yellow;
+            color: color.$c-yellow;
+        }
+
+        &::after{
+            position: absolute;
+            content: "";
+            border-bottom: 2px solid color.$c-white;
+            width: 26%;
+            top: 50%;
+            left: 100%;
+            z-index: -1;
+        }
+    }
+
+    &__inner{
+        margin-left: 70px;
+        width: 82%;
+    }
+
+    &__box-heading{
+        display: inline-block;
+        font-family: font.$noto-sans;
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 1.4;
+        padding: 0 .5em;
+        margin-bottom: 25px;
+        background-image: linear-gradient(rgba(0 0 0/0) 75%, color.$c-blue-paler 0%);
+
+        &--yellow{
+            background-image: linear-gradient(rgba(0 0 0/0) 75%, color.$c-yellow 0%);
+        }
+    }
+
+    &__box-text{
+        font-family: font.$noto-sans;
+        line-height: 1.78;
+        letter-spacing: .02em;
+        text-align: justify;
+    }
+
+    &__award{
+        display: flex;
+        margin-top: 25px;
+
+        &-heading{
+            font-family: font.$noto-sans;
+            font-size: 22px;
+            font-weight: bold;
+            margin-right: 45px;
+            padding-left: 14px;
+            height: fit-content;
+            position: relative;
+
+            &::before{
+                position: absolute;
+                content: "";
+                border-left: 4px solid color.$c-yellow;
+                height: 1.4em;
+                left: 0;
+                top: 50%;
+                transform: translateY(-45%);
+            }
+
+            
+        }
+
+        &-text{
+            font-family: font.$noto-sans;
+            letter-spacing: .02em;
+            line-height: 1.78;
+            margin-top: .3em;
+        }
+    }
+
+
+
 }
