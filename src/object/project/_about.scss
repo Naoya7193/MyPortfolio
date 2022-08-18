@@ -10,7 +10,7 @@
     background-size: contain;
     background-position: center;
     aspect-ratio: 1267/586;
-    margin-bottom: 115px;
+    margin-bottom: clamp(70px,8.3vw,115px);
 
     &__heading{
         display: inline-block;
@@ -21,7 +21,7 @@
         line-height: 1.2;
         padding: 0 .5em;
         margin-left: 55px;
-        margin-bottom: 55px;
+        margin-bottom: clamp(30px,4vw,55px);
 
         &::first-letter{
             color: color.$c-base;
@@ -31,8 +31,8 @@
 
 // PROFILE
 .p-about-profile{
-    padding-bottom: 120px;
-    margin-bottom: 100px;
+    padding-bottom: clamp(70px,8.6vw,120px);
+    margin-bottom: clamp(55px,7.2vw,100px);
     border-bottom: 4px dashed color.$c-white;
 
     &__card{
@@ -41,6 +41,7 @@
         width: 90%;
         margin: 0 auto;
         margin-top: 65px;
+        min-width: 620px;
 
         &-image{
             width: 35%;
@@ -54,7 +55,7 @@
         }
 
         &-heading{
-            font-size: 62px;
+            font-size: clamp(40px,4.5vw,62px);
             line-height: 1.2;
             padding-right: .5em;
             letter-spacing: .01em;
@@ -63,7 +64,7 @@
 
         &-text{
             font-family: font.$noto-sans;
-            font-size: 20px;
+            font-size: clamp(14px,1.5vw,20px);
             letter-spacing: .02em;
             line-height: 1.9;
         }
@@ -72,28 +73,29 @@
 
 // MOTTO
 .p-about-motto{
-    padding-bottom: 100px;
-    margin-bottom: 100px;
+    padding-bottom: clamp(55px,7.2vw,100px);
+    margin-bottom: clamp(55px,7.2vw,100px);
     border-bottom: 4px dashed color.$c-white;
 
     &__container{
         display: flex;
         justify-content: space-between;
-        margin-top: 55px;
+        margin-top: clamp(30px,4vw,55px);
     }
 
     &__card{
         width: 30%;
+        min-width: 188px;
 
         &-heading{
             display: flex;
             align-items: center;
-            margin-bottom: 40px;
+            margin-bottom: clamp(28px,2.9vw,40px);
         }
 
         &-number{
             font-family: font.$helvetica;
-            font-size: 27px;
+            font-size: clamp(20px,2vw,27px);
             font-weight: bold;
             line-height: 1;
             background-color: color.$c-white;
@@ -103,13 +105,13 @@
 
         &-title{
             font-family: font.$noto-sans;
-            font-size: 30px;
+            font-size: clamp(25px,2.2vw,30px);
             font-weight: bold;
             margin-left: .9em;
         }
 
         &-image{
-            margin-bottom: 40px;
+            margin-bottom: clamp(28px,2.9vw,40px);
 
             &--red{
                 border: 8px solid color.$c-red;
@@ -124,7 +126,7 @@
 
         &-text{
             font-family: font.$noto-sans;
-            font-size: 16px;
+            font-size: clamp(14px,1.2vw,16px);
             letter-spacing: .02em;
             line-height: 2;
             text-align: justify;
@@ -134,15 +136,15 @@
 
 // CAREER
 .p-about-career{
-    padding-bottom: 200px;
+    padding-bottom: clamp(140px,14.3vw,200px);
 
     &__container{
-        margin-top: 70px;
+        margin-top: clamp(40px,5.1vw,70px);
     }
 
     &__box{
         display: flex;
-        margin-bottom: 65px;
+        margin-bottom: clamp(50px,4.7vw,65px);
 
         &:last-child{
             margin-bottom: 0;
@@ -154,17 +156,17 @@
         align-items: center;
         justify-content: center;
         font-family: font.$helvetica;
-        font-size: 22px;
+        font-size: clamp(18px,1.6vw,22px);
         font-weight: bold;
         color: color.$c-blue-paler;
         background-color: color.$c-white;
-        width: 68px;
-        height: 68px;
+        width: clamp(56px,4.9vw,68px);
+        height: clamp(56px,4.9vw,68px);
         border: 3px solid color.$c-blue-paler;
         position: relative;
 
         &--yellow{
-            font-size: 16px;
+            font-size: clamp(12px,1.2vw,16px);
             border-color: color.$c-yellow;
             color: color.$c-yellow;
         }
@@ -181,18 +183,18 @@
     }
 
     &__inner{
-        margin-left: 70px;
+        margin-left: clamp(40px,5vw,70px);
         width: 82%;
     }
 
     &__box-heading{
         display: inline-block;
         font-family: font.$noto-sans;
-        font-size: 32px;
+        font-size: clamp(25px,2.3vw,32px);
         font-weight: bold;
         line-height: 1.4;
         padding: 0 .5em;
-        margin-bottom: 25px;
+        margin-bottom: clamp(22px,1.8vw,25px);
         background-image: linear-gradient(rgba(0 0 0/0) 75%, color.$c-blue-paler 0%);
 
         &--yellow{
@@ -205,20 +207,22 @@
         line-height: 1.78;
         letter-spacing: .02em;
         text-align: justify;
+        font-size: clamp(15px,1.3vw,18px);
     }
 
     &__award{
         display: flex;
-        margin-top: 25px;
+        margin-top: clamp(16px,1.8vw,25px);
 
         &-heading{
             font-family: font.$noto-sans;
-            font-size: 22px;
+            font-size: clamp(16px,1.6vw,22px);
             font-weight: bold;
-            margin-right: 45px;
+            margin-right: clamp(20px,3.3vw,45px);
             padding-left: 14px;
             height: fit-content;
             position: relative;
+            min-width: 65px;
 
             &::before{
                 position: absolute;
@@ -238,6 +242,7 @@
             letter-spacing: .02em;
             line-height: 1.78;
             margin-top: .3em;
+            font-size: clamp(15px,1.3vw,18px);
         }
     }
 
