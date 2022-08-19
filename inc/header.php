@@ -35,17 +35,18 @@
 
 <body>
 
-<header class="l-header l-wrapper">
+<!-- HEADER -->
+<header class="l-header l-wrapper" id="js-height">
     <div class="l-header__icon">
-        <a href="./">NAOYA</a>
+        <a href="./">N<span class="l-text__blue-lighter">A</span>O<span class="l-text__yellow">Y</span><span class="l-text__blue-darker">A</span></a>
     </div>
     <nav class="l-header__nav">
-        <ul class="l-header__list">
+        <ul class="l-header__list js-header">
             <li class="l-header__link">
                 <a href="./#message">
                 <ul class="l-header__item">
                     <li class="l-header__item-english">MESSAGE</li>
-                    <li class="l-header__item-japanese">メッセージ</li>
+                    <li class="l-header__item-japanese js-hide">メッセージ</li>
                 </ul>
                 </a>
             </li>
@@ -53,23 +54,23 @@
                 <a href="./#skill">
                 <ul class="l-header__item">
                     <li class="l-header__item-english">SKILL</li>
-                    <li class="l-header__item-japanese">スキル</li>
+                    <li class="l-header__item-japanese js-hide">スキル</li>
                 </ul>
                 </a>
             </li>
-            <li class="l-header__link">
+            <li class="l-header__link js-works">
                 <a href="./works">
                 <ul class="l-header__item">
                     <li class="l-header__item-english">WORKS</li>
-                    <li class="l-header__item-japanese">制作物</li>
+                    <li class="l-header__item-japanese js-hide">制作物</li>
                 </ul>
                 </a>
             </li>
-            <li class="l-header__link">
+            <li class="l-header__link js-about">
                 <a href="./about">
                 <ul class="l-header__item">
                     <li class="l-header__item-english">ABOUT</li>
-                    <li class="l-header__item-japanese">私について</li>
+                    <li class="l-header__item-japanese js-hide">私について</li>
                 </ul>
                 </a>
             </li>

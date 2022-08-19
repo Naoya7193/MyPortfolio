@@ -6,15 +6,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // position: sticky;
+    position: sticky;
     top: 0;
     background-color: color.$c-base;
     z-index: 999;
+    transition: .2s top;
 
     &__icon{
         font-size: clamp(32px,3.6vw,46px);
         font-weight: bold;
         letter-spacing: .01em;
+        color: color.$c-base;
 
         &:hover{
             opacity: 0.6;
@@ -27,6 +29,10 @@
         padding: clamp(30px,4vw,50px) 0 clamp(20px,3vw,40px);
         gap: clamp(40px,6vw,80px);
         line-height: 1;
+
+        &.is-shorter{
+            padding: 2em 0 1.5em;
+        }
     }
 
     &__link{
@@ -51,5 +57,13 @@
         font-family: font.$noto-sans;
         font-weight: 500;
         font-size: clamp(12px,1.2vw,14px);
+
+        &.is-hide{
+            display: none;
+        }
+    }
+
+    & .is-recolor{
+        color: color.$c-yellow;
     }
 }
