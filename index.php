@@ -70,7 +70,7 @@
     </div>
 
     <div class="p-index-works__inner">
-        <div class="p-index-works__container">
+        <div class="p-index-works__container flex">
             <div class="p-index-works__card">
                 <a href="./works#MK">
                     <img src="./image/top-MK.png" alt="株式会社エムケーのサムネイル" class="p-index-works__card-thumbnail">
@@ -118,7 +118,7 @@
     </div>
 
     <div class="p-index-about__inner">
-        <div class="p-index-about__card">
+        <div class="p-index-about__card flex">
             <img src="./image/profile-image.png" alt="アイコン画像" class="p-index-about__card-image">
             <div class="p-index-about__card-inner">
                 <h3 class="p-index-about__card-heading">Naoya Fujimoto</h3>

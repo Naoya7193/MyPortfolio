@@ -1,9 +1,14 @@
 @use "../fundation/color";
+@use "../fundation/mixin";
 
 .l-wrapper{
     width: 88%;
     margin: 0 auto;
     min-width: 674px;
+
+    @include mixin.mq() {
+        width: 93%;
+    }
 }
 
 .l-wrapper-sm{
@@ -22,4 +27,10 @@
 
 .l-text__blue-darker{
     color: color.$c-blue-darker;
+}
+
+.flex{
+    @include mixin.mq() {
+        flex-direction: column;
+    }
 }

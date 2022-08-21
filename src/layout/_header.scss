@@ -1,5 +1,6 @@
 @use "../fundation/color";
 @use "../fundation/font";
+@use "../fundation/mixin";
 
 
 .l-header{
@@ -12,15 +13,31 @@
     z-index: 999;
     transition: .2s top;
 
+    @include mixin.mq() {
+        position:unset;
+    }
+
     &__icon{
         font-size: clamp(32px,3.6vw,46px);
         font-weight: bold;
         letter-spacing: .01em;
         color: color.$c-base;
 
+        @include mixin.mq() {
+            font-size: min(7.4vw,40px);
+            padding: 1em 0;
+            line-height: 1;
+        }
+
         &:hover{
             opacity: 0.6;
             transition: .3s opacity;
+        }
+    }
+
+    &__nav{
+        @include mixin.mq() {
+            display: none;
         }
     }
 

@@ -1,5 +1,6 @@
 @use "../../fundation/font";
 @use "../../fundation/color";
+@use "../../fundation/mixin";
 
 @forward "works";
 @forward "about";
@@ -95,6 +96,12 @@
     background-position: center;
     background-repeat: no-repeat;
     aspect-ratio: 1267/665;
+
+    @include mixin.mq() {
+        aspect-ratio: 1/1;
+        width: 100%;
+        max-height: 620px;
+    }
 
     &__heading{
         width: fit-content;

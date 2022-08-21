@@ -38,5 +38,5 @@ $(window).on("scroll touchmove",function(){
 
     id = setTimeout(function(){
         $('.l-header').css('top','0');
-    },400);
+    },800);
 });
