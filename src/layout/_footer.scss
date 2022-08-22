@@ -1,10 +1,15 @@
 @use "../fundation/font";
 @use "../fundation/color";
+@use "../fundation/mixin";
 
 .l-footer{
     width: 100%;
     background-color: color.$c-white;
-    padding: .6em 0 .6em;
+    padding: .6em 0;
+
+    @include mixin.mq() {
+        padding: .3em 0;
+    }
 
     &__copylight{
         font-family: font.$noto-sans;
@@ -12,5 +17,9 @@
         font-weight: bold;
         text-align: center;
         color: color.$c-base;
+
+        @include mixin.mq() {
+            font-size: min(3.2vw,14px);
+        }
     }
 }

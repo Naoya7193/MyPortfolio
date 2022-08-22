@@ -8,6 +8,7 @@
 
     @include mixin.mq() {
         width: 93%;
+        min-width: unset;
     }
 }
 
@@ -15,6 +16,10 @@
     width: 74%;
     margin: 0 auto;
     min-width: 620px;
+
+    @include mixin.mq() {
+        min-width: unset;
+    }
 }
 
 .l-text__blue-lighter{

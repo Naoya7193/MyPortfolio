@@ -1,5 +1,6 @@
 @use "../../fundation/font";
 @use "../../fundation/color";
+@use "../../fundation/mixin";
 
 // セクションタイトル
 .c-section-heading{
@@ -12,6 +13,13 @@
     background-position: left top;
     background-repeat: no-repeat;
 
+    @include mixin.mq() {
+        padding-bottom: 60px;
+        padding-right: 120px;
+        padding-top: 30px;
+        padding-left: max(7vw,35px);
+    }
+
     &__japanese{
         font-family: font.$noto-sans;
         font-size: clamp(16px,2vw,22px);
@@ -19,6 +27,10 @@
         text-align: end;
         line-height: 1;
         margin-bottom: 20px;
+
+        @include mixin.mq() {
+            margin-bottom: 5px;
+        }
     }
 
     &__english{
@@ -26,6 +38,10 @@
         font-weight: bold;
         letter-spacing: .01em;
         line-height: 1;
+
+        @include mixin.mq() {
+            font-size: min(8.5vw,46px);
+        }
     }
 
     &--yellow{
