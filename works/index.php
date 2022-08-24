@@ -63,7 +63,7 @@
             <img src="../image/works-MK.png" alt="株式会社エムケーの画像" class="p-works-content__image">
         </div>
 
-        <div class="p-works-content__button">
+        <div class="p-works-content__button flex">
             <button class="p-works-content__button-link p-works-content__button-link--green">
                 <div class="p-works-content__button-heading">サイトはこちら</div>
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24"viewBox="0 0 24 24" class="p-works-content__button-external-link">
@@ -113,7 +113,7 @@
             <img src="../image/works-kitahama.png" alt="キタハマ総合法律事務所の画像" class="p-works-content__image">
         </div>
 
-        <div class="p-works-content__button">
+        <div class="p-works-content__button flex">
             <button class="p-works-content__button-link p-works-content__button-link--red">
                 <div class="p-works-content__button-heading">サイトはこちら</div>
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24"viewBox="0 0 24 24" class="p-works-content__button-external-link">
@@ -163,7 +163,7 @@
             <img src="../image/works-theplacenamba.png" alt="THE PLACE NAMBAの画像" class="p-works-content__image">
         </div>
 
-        <div class="p-works-content__button">
+        <div class="p-works-content__button flex">
             <button class="p-works-content__button-link p-works-content__button-link--yellow">
                 <div class="p-works-content__button-heading">サイトはこちら</div>
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24"viewBox="0 0 24 24" class="p-works-content__button-external-link">
@@ -213,7 +213,7 @@
             <img src="../image/works-fujimetal.png" alt="株式会社ふじ芳金属加工の画像" class="p-works-content__image">
         </div>
 
-        <div class="p-works-content__button">
+        <div class="p-works-content__button flex">
             <button class="p-works-content__button-link p-works-content__button-link--blue">
                 <div class="p-works-content__button-heading">サイトはこちら</div>
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24"viewBox="0 0 24 24" class="p-works-content__button-external-link">

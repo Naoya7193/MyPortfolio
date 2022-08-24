@@ -1,5 +1,6 @@
 @use "../../fundation/font";
 @use "../../fundation/color";
+@use "../../fundation/mixin";
 
 // MV
 .p-works-mv{
@@ -12,6 +13,13 @@
     aspect-ratio: 1267/586;
     margin-bottom: clamp(70px,8.3vw,115px);
 
+    @include mixin.mq() {
+        aspect-ratio: 1/1;
+        width: 100%;
+        max-height: 620px;
+        background-size: cover;
+    }
+
     &__heading{
         display: inline-block;
         font-size: 5.5vw;
@@ -22,6 +30,11 @@
         padding: 0 .5em;
         margin-left: 55px;
         margin-bottom: clamp(30px,4vw,55px);
+
+        @include mixin.mq() {
+            font-size: max(7.5vw,36px); 
+            margin-left: 3.5vw;
+        }
 
         &::first-letter{
             color: color.$c-base;
@@ -39,6 +52,11 @@
         justify-content: space-between;
         margin-top: clamp(30px,3.6vw,50px);
         margin-bottom: clamp(75px,7.2vw,100px);
+
+        @include mixin.mq() {
+            width: 100%;
+            justify-content: center;
+        }
     }
 
     &__card{
@@ -46,6 +64,12 @@
         width: 47%;
         min-width: 300px;
         transition: .3s transform;
+
+        @include mixin.mq() {
+            min-width: unset;
+            width: 100%;
+            max-width: 540px;
+        }
 
         &:hover{
             transform: scale(1.1);
@@ -129,12 +153,26 @@
     &__box{
         margin-top: clamp(70px,8.6vw,120px);
 
+        @include mixin.mq() {
+            width: 100%;
+            margin-top: min(15vw,74px);
+        }
+
         &:first-child{
             // 効いていない
             margin-top: 45px;
+
+            @include mixin.mq() {
+                margin-top: 0;
+            }
         }
+
         &:last-child{
             margin-bottom: clamp(140px,14.3vw,200px);
+
+            @include mixin.mq() {
+                margin-bottom: min(29vw,156px);
+            }
         }
     }
 
@@ -146,6 +184,11 @@
         padding: 0 .2em;
         margin-bottom: clamp(30px,3.6vw,50px);
         line-height: 1.4;
+
+        @include mixin.mq() {
+            font-size: min(7vw,46px);
+            margin-bottom: 5.3vw;
+        }
 
         &--green{
             background-image: linear-gradient(rgba(0 0 0/0) 75%, color.$c-green 0%);
@@ -173,6 +216,10 @@
         width: 60%;
         padding-top: 50px;
         object-fit: contain;
+
+        @include mixin.mq() {
+            width: 82%;
+        }
     }
 
     &__button{
@@ -180,6 +227,10 @@
         justify-content: space-between;
         width: 82%;
         margin: 0 auto;
+
+        @include mixin.mq() {
+            align-items: center;
+        }
 
         :hover{
             color: color.$c-white;
@@ -199,6 +250,17 @@
             background-color: color.$c-white;
             position: relative;
             transition: .1s all;
+
+            @include mixin.mq() {
+                width: 100%;
+                margin-bottom: 2vw;
+                padding: .7em 0;
+                max-width: 350px;
+
+                &:last-child{
+                    margin-bottom: unset;
+                }
+            }
 
             &--green{
                 fill: color.$c-green;
@@ -243,6 +305,11 @@
         margin-left: 25px;
         margin-bottom: clamp(24px,2.9vw,40px);
 
+        @include mixin.mq() {
+            margin-left: unset;
+            margin-bottom: min(5.3vw,24px);
+        }
+
         &:last-child{
             margin-bottom: 0;
         }
@@ -254,6 +321,11 @@
             margin-bottom: clamp(0px,0.4vw,5px);
             position: relative;
 
+            @include mixin.mq() {
+                font-size: min(5vw,24px);
+                padding-left: min(2.6vw,18px);
+            }
+
             &::before{
                 position: absolute;
                 content: "";
@@ -263,6 +335,10 @@
                 top: 50%;
                 transform: translateY(-50%);
                 left: clamp(-18px,-1.3vw,-12px);
+
+                @include mixin.mq() {
+                    left: 0;
+                }
             }
 
             &--green{
@@ -290,6 +366,11 @@
         &-text{
             font-family: font.$noto-sans;
             font-size: clamp(16px,1.3vw,18px);
+
+            @include mixin.mq() {
+                font-size: min(4vw,20px);
+                line-height: 1.6;
+            }
         }
     }
 }
