@@ -1,5 +1,6 @@
 @use "../../fundation/font";
 @use "../../fundation/color";
+@use "../../fundation/mixin";
 
 // MV
 .p-about-mv{
@@ -12,6 +13,14 @@
     aspect-ratio: 1267/586;
     margin-bottom: clamp(70px,8.3vw,115px);
 
+    @include mixin.mq() {
+        aspect-ratio: 1/1;
+        width: 100%;
+        max-height: 620px;
+        background-size: cover;
+        margin-bottom: min(30vw,120px);
+    }
+
     &__heading{
         display: inline-block;
         font-size: 5.5vw;
@@ -22,6 +31,11 @@
         padding: 0 .5em;
         margin-left: 55px;
         margin-bottom: clamp(30px,4vw,55px);
+
+        @include mixin.mq() {
+            font-size: max(7.5vw,36px); 
+            margin-left: 3.5vw;
+        }
 
         &::first-letter{
             color: color.$c-base;
@@ -35,23 +49,44 @@
     margin-bottom: clamp(55px,7.2vw,100px);
     border-bottom: 4px dashed color.$c-white;
 
+    @include mixin.mq() {
+        padding-bottom: min(20vw,100px);
+        margin-bottom: min(13vw,80px);
+    }
+
     &__card{
         display: flex;
         justify-content: space-between;
-        width: 90%;
+        width: 95%;
         margin: 0 auto;
         margin-top: 65px;
         min-width: 620px;
 
+        @include mixin.mq() {
+            min-width: unset;
+            width: 100%;
+            align-items: center;
+        }
+
         &-image{
             width: 35%;
             object-fit: contain;
+
+            @include mixin.mq() {
+                width: 63%;
+                max-width: 320px;
+                margin-bottom: 5.3vw;
+            }
         }
 
         &-inner{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+            @include mixin.mq() {
+                width: 100%;
+            }
         }
 
         &-heading{
@@ -60,6 +95,15 @@
             padding-right: .5em;
             letter-spacing: .01em;
             font-weight: bold;background-image: linear-gradient(rgba(0 0 0/0) 75%, color.$c-green 50%);
+
+            @include mixin.mq() {
+                font-size: min(7.5vw,42px);
+                text-align: center;
+                padding-right: unset;
+                width: min(72vw,450px);
+                margin: 0 auto;
+                margin-bottom: min(8.2vw,36px);
+            }
         }
 
         &-text{
@@ -67,6 +111,14 @@
             font-size: clamp(14px,1.5vw,20px);
             letter-spacing: .02em;
             line-height: 1.9;
+
+            @include mixin.mq() {
+                white-space: unset;
+                font-size: min(4vw,18px);
+                line-height: 1.73;
+                width: min(90vw,500px);
+                margin: 0 auto;
+            }
         }
     }
 }
@@ -77,20 +129,47 @@
     margin-bottom: clamp(55px,7.2vw,100px);
     border-bottom: 4px dashed color.$c-white;
 
+    @include mixin.mq() {
+        padding-bottom: min(21vw,120px);
+    }
+
     &__container{
         display: flex;
         justify-content: space-between;
         margin-top: clamp(30px,4vw,55px);
+
+        @include mixin.mq() {
+            width: 79vw;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 480px;
+            margin-top: 12vw;
+        }
     }
 
     &__card{
         width: 30%;
         min-width: 188px;
 
+        @include mixin.mq() {
+            width: 100%;
+            margin-bottom: 7.2vw;
+        }
+
+        &:last-child{
+            @include mixin.mq() {
+                margin-bottom: unset;
+            }
+        }
+
         &-heading{
             display: flex;
             align-items: center;
             margin-bottom: clamp(28px,2.9vw,40px);
+
+            @include mixin.mq() {
+                margin-bottom: min(3vw,20px);
+            }
         }
 
         &-number{
@@ -101,6 +180,11 @@
             background-color: color.$c-white;
             color: color.$c-base;
             padding: 10px;
+
+            @include mixin.mq() {
+                font-size: min(5.7vw,32px);
+                padding: .3em;
+            }
         }
 
         &-title{
@@ -108,10 +192,21 @@
             font-size: clamp(25px,2.2vw,30px);
             font-weight: bold;
             margin-left: .9em;
+
+            @include mixin.mq() {
+                font-size: min(7vw,32px);
+            }
         }
 
         &-image{
             margin-bottom: clamp(28px,2.9vw,40px);
+
+            @include mixin.mq() {
+                width: 100%;
+                height: max(45vw,220px);
+                object-fit: cover;
+                margin-bottom: min(4vw,22px);
+            }
 
             &--red{
                 border: 8px solid color.$c-red;
@@ -130,6 +225,11 @@
             letter-spacing: .02em;
             line-height: 2;
             text-align: justify;
+
+            @include mixin.mq() {
+                line-height: 1.75;
+                font-size: min(3.7vw,18px);
+            }
         }
     }
 }
@@ -138,6 +238,10 @@
 .p-about-career{
     padding-bottom: clamp(140px,14.3vw,200px);
 
+    @include mixin.mq() {
+        padding-bottom: min(29vw, 156px);
+    }
+
     &__container{
         margin-top: clamp(40px,5.1vw,70px);
     }
@@ -145,6 +249,10 @@
     &__box{
         display: flex;
         margin-bottom: clamp(50px,4.7vw,65px);
+
+        @include mixin.mq() {
+            margin-bottom: 7vw;
+        }
 
         &:last-child{
             margin-bottom: 0;
@@ -165,10 +273,20 @@
         border: 3px solid color.$c-blue-paler;
         position: relative;
 
+        @include mixin.mq() {
+            font-size: min(3.5vw,16px);
+            width: min(11vw,52px);
+            height: min(10.4vw, 50px);
+        }
+
         &--yellow{
             font-size: clamp(12px,1.2vw,16px);
             border-color: color.$c-yellow;
             color: color.$c-yellow;
+
+            @include mixin.mq() {
+                font-size: min(2vw,13px);
+            }
         }
 
         &::after{
@@ -179,12 +297,21 @@
             top: 50%;
             left: 100%;
             z-index: -1;
+
+            @include mixin.mq() {
+                content: unset;
+            }
         }
     }
 
     &__inner{
         margin-left: clamp(40px,5vw,70px);
         width: 82%;
+
+        @include mixin.mq() {
+            margin-left: 3vw;
+            width: 100%;
+        }
     }
 
     &__box-heading{
@@ -193,12 +320,34 @@
         font-size: clamp(25px,2.3vw,32px);
         font-weight: bold;
         line-height: 1.4;
-        padding: 0 .5em;
         margin-bottom: clamp(22px,1.8vw,25px);
-        background-image: linear-gradient(rgba(0 0 0/0) 75%, color.$c-blue-paler 0%);
+
+        @include mixin.mq() {
+            font-size: min(5vw,28px);
+            margin-bottom: min(3.5vw,24px);
+        }
+
+        span{
+            background-image: linear-gradient(rgba(0 0 0/0) 75%, color.$c-blue-paler 0%);
+
+            @include mixin.mq() {
+                padding: unset;
+                white-space: nowrap;
+            }
+
+            &:first-child{
+                padding-left: .5em;
+            }
+
+            &:last-child{
+                padding-right: .5em;
+            }
+        }
 
         &--yellow{
-            background-image: linear-gradient(rgba(0 0 0/0) 75%, color.$c-yellow 0%);
+            span{
+                background-image: linear-gradient(rgba(0 0 0/0) 75%, color.$c-yellow 0%);
+            }
         }
     }
 
@@ -208,11 +357,20 @@
         letter-spacing: .02em;
         text-align: justify;
         font-size: clamp(15px,1.3vw,18px);
+
+        @include mixin.mq() {
+            line-height: 1.5;
+            font-size: min(4vw,16px);
+        }
     }
 
     &__award{
         display: flex;
         margin-top: clamp(16px,1.8vw,25px);
+
+        @include mixin.mq() {
+            margin-top: 3.2vw;
+        }
 
         &-heading{
             font-family: font.$noto-sans;
@@ -233,8 +391,6 @@
                 top: 50%;
                 transform: translateY(-45%);
             }
-
-            
         }
 
         &-text{
@@ -243,9 +399,10 @@
             line-height: 1.78;
             margin-top: .3em;
             font-size: clamp(15px,1.3vw,18px);
+
+            @include mixin.mq() {
+                font-size: min(3.5vw,15px);
+            }
         }
     }
-
-
-
 }

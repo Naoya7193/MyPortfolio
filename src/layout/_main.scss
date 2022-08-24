@@ -18,6 +18,7 @@
     min-width: 620px;
 
     @include mixin.mq() {
+        width: 93%;
         min-width: unset;
     }
 }
