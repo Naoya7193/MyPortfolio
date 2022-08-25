@@ -38,10 +38,10 @@
 <!-- HEADER -->
 <header class="l-header l-wrapper" id="js-height">
     <div class="l-header__icon">
-        <a href="./">N<span class="l-text__blue-lighter">A</span>O<span class="l-text__yellow">Y</span><span class="l-text__blue-darker">A</span></a>
+        <a href="./"><span class="l-text__blue-paler">N</span>AO<span class="l-text__yellow">Y</span><span class="l-text__blue-darker">A</span></a>
     </div>
     <nav class="l-header__nav">
-        <ul class="l-header__list js-header">
+        <ul class="l-header__list js-header flex">
             <li class="l-header__link">
                 <a href="./#message">
                 <ul class="l-header__item">
@@ -76,4 +76,7 @@
             </li>
         </ul>
     </nav>
+    <div class="l-header__humberger js-humberger">
+        <div class="l-header__humberger-border"></div>
+    </div>
 </header>

@@ -40,3 +40,10 @@ $(window).on("scroll touchmove",function(){
         $('.l-header').css('top','0');
     },800);
 });
+
+// ハンバーガーメニュー
+$(function() {
+    $('.js-humberger').click(function() {
+        $('.l-header').toggleClass('is-open');
+    });
+});

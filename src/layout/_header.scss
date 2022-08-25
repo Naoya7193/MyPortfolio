@@ -21,7 +21,8 @@
         font-size: clamp(32px,3.6vw,46px);
         font-weight: bold;
         letter-spacing: .01em;
-        color: color.$c-base;
+        color: color.$c-blue-light;
+        position: relative;
 
         @include mixin.mq() {
             font-size: min(7.4vw,40px);
@@ -30,14 +31,24 @@
         }
 
         &:hover{
-            opacity: 0.6;
+            opacity: .7;
             transition: .3s opacity;
         }
     }
 
     &__nav{
         @include mixin.mq() {
-            display: none;
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            top: 0;
+            right: -100vw;
+            width: 100vw;
+            height: 65vh;
+            background-color: rgba(255, 255, 255, 0.9);
+            z-index: 15;
+            color: color.$c-base;
+            transition: .3s right;
         }
     }
 
@@ -49,6 +60,15 @@
 
         &.is-shorter{
             padding: 2em 0 1.5em;
+
+            @include mixin.mq() {
+                padding: clamp(30px,4vw,50px) 0 clamp(20px,3vw,40px);
+            }
+        }
+
+        @include mixin.mq() {
+            position: fixed;
+            top: 10vh;
         }
     }
 
@@ -57,7 +77,6 @@
             color: color.$c-yellow;
             transition: .3s color;
         }
-
     }
 
     &__item{
@@ -77,10 +96,104 @@
 
         &.is-hide{
             display: none;
+
+            @include mixin.mq() {
+                display: block;
+            }
         }
     }
 
     & .is-recolor{
         color: color.$c-yellow;
+    }
+
+    &__humberger{
+        display: none;
+        
+        @include mixin.mq() {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            right: 5vw;
+            top: 5vw;
+            height: 54px;
+            width: 54px;
+            background-color: color.$c-white;
+            border: 3px color.$c-base solid;
+            border-radius: 999px;
+            z-index: 20;
+        }
+
+        &-border{
+            display: none;
+
+            @include mixin.mq() {
+                position: absolute;
+                display: block;
+                width: 24px;
+                height: 20px;
+                border-bottom: 4px solid color.$c-base;
+                border-top: 4px solid color.$c-base;
+                z-index: 20;
+
+                transition: .2s opacity;
+            }
+        }
+
+        &::before{
+            @include mixin.mq() {
+                position: absolute;
+                content: "";
+                width: 24px;
+                height: 4px;
+                border-bottom: 4px solid color.$c-base;
+
+                transition: .2s transform;
+            }
+        }
+
+        &::after{
+            @include mixin.mq() {
+                position: absolute;
+                content: "";
+                width: 24px;
+                height: 4px;
+                border-bottom: 4px solid color.$c-base;
+
+                transition: .2s transform;
+            }
+        }
+    }
+}
+
+.is-open{
+    .l-header{
+        &__nav{            
+            @include mixin.mq() {
+                right: 0;
+                top: 0;
+            }
+        }
+
+        &__humberger{
+            &-border{
+                @include mixin.mq() {
+                    opacity: 0;
+                }
+            }
+
+            &::before{
+                @include mixin.mq() {
+                    transform: rotate(45deg);
+                }
+            }
+
+            &::after{
+                @include mixin.mq() {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
     }
 }
