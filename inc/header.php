@@ -41,7 +41,7 @@
         <a href="./"><span class="l-text__blue-paler">N</span>AO<span class="l-text__yellow">Y</span><span class="l-text__blue-darker">A</span></a>
     </div>
     <nav class="l-header__nav">
-        <ul class="l-header__list js-header flex">
+        <ul class="l-header__list js-header l-flex">
             <li class="l-header__link">
                 <a href="./#message">
                 <ul class="l-header__item">

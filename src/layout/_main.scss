@@ -5,6 +5,7 @@
     width: 88%;
     margin: 0 auto;
     min-width: 674px;
+    max-width: 1267px;
 
     @include mixin.mq() {
         width: 93%;
@@ -16,6 +17,7 @@
     width: 74%;
     margin: 0 auto;
     min-width: 620px;
+    max-width: 1066px;
 
     @include mixin.mq() {
         width: 93%;
@@ -39,8 +41,12 @@
     color: color.$c-blue-darker;
 }
 
-.flex{
+.l-flex{
     @include mixin.mq() {
         flex-direction: column;
     }
+}
+
+.l-anchor__mt{
+    scroll-margin-top: 60px;
 }

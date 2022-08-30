@@ -7,25 +7,21 @@
 </section>
 
 <!-- MESSAGE -->
-<section class="p-index-message l-wrapper">
-    <div class="c-section-heading" id="message">
+<section class="p-index-message l-wrapper"  id="message">
+    <div class="c-section-heading">
         <p class="c-section-heading__japanese">メッセージ</p>
         <h2 class="c-section-heading__english">MESSAGE</h2>
     </div>
 
-    <p class="p-index-message__copy"><span>「ワクワク」する気持ちを</span><span>大切にしています</span></p>
+    <p class="p-index-message__copy"><span>常に最適解を考えられる</span><span>エンジニアでありたい！</span></p>
     <p class="p-index-message__text">
-        僕は「ものづくりを通して多くの人にワクワクする体験を届けたい」と考えています。<br>
-        そのためには多くの人にワクワクしてもらえるプロダクトを世に出す必要があります。<br>
-        作る人がワクワクできないプロダクトは使う人にワクワクする体験を提供することはできません。<br>
-        そのため僕は自分の携わるプロダクトにワクワクできるか、面白いと感じられるか、を大切にしています。<br>
-        僕は同じような志を持つ人達のワクワクするアイデアやデザインを形にする力になりたいと思っています。
+    エンジニアはプログラムを用いてアイデアを形にする職業です。しかし私はそれ以上に目に見えない部分が重要視される職業だと考えています。例えば魅力的なWebデザインを形にするとき、ユーザの環境に依存することなくサイトの魅力を伝えなければいけません。また要件に沿ったシステムを開発するとき、機能の実装と同じくらい運用や保守性について考える必要があります。私はエンジニアの「目には見えない工夫」や「な設計」を大切にします。魅力的なアイデアをワクワクするプロダクトに変える力になります。
     </p>
 </section>
 
 <!-- SKILL -->
-<section class="p-index-skill l-wrapper">
-    <div class="c-section-heading c-section-heading--yellow" id="skill">
+<section class="p-index-skill l-wrapper" id="skill">
+    <div class="c-section-heading c-section-heading--yellow">
         <p class="c-section-heading__japanese">スキル</p>
         <h2 class="c-section-heading__english">SKILL</h2>
     </div>
@@ -66,7 +62,7 @@
     </div>
 
     <div class="p-index-works__inner">
-        <div class="p-index-works__container flex">
+        <div class="p-index-works__container l-flex">
             <div class="p-index-works__card">
                 <a href="./works#MK">
                     <img src="./image/top-MK.png" alt="株式会社エムケーのサムネイル" class="p-index-works__card-thumbnail">
@@ -102,7 +98,7 @@
     </div>
 
     <div class="p-index-works__button">
-        <button class="p-index-works__button-link p-index-works__button-link--red">READ MORE</button>
+        <a class="p-index-works__button-link p-index-works__button-link--red" href="/works">READ MORE</a>
     </div>
 </section>
 
@@ -114,23 +110,20 @@
     </div>
 
     <div class="p-index-about__inner">
-        <div class="p-index-about__card flex">
+        <div class="p-index-about__card l-flex">
             <img src="./image/profile-image.png" alt="アイコン画像" class="p-index-about__card-image">
             <div class="p-index-about__card-inner">
                 <h3 class="p-index-about__card-heading">Naoya Fujimoto</h3>
                 <p class="p-index-about__card-text">
                     奈良県生まれ奈良県育ちのエンジニア志望<br>
-                    プログラムを書くことや新しい技術を勉強するのが好きです<br>
-                    人と話したり話を聞いたりするのが好きです<br>
-                    ものづくりと謎解きが好きで時々イラストも描きます<br>
-                    よろしくお願いします！
+                    プログラムを書くこと、新しい技術を勉強すること、人と話したり話を聞くこと、ものづくり、謎解きなど好きなものがたくさんあります！よく学び、よく作り、よく考えるタイプの人です！よろしくお願いします！
                 </p>
             </div>
         </div>
     </div>
 
     <div class="p-index-about__button">
-        <button class="p-index-about__button-link p-index-about__button-link--green">READ MORE</button>
+        <a class="p-index-about__button-link p-index-about__button-link--green" href="/about">READ MORE</a>
     </div>
 </section>
 

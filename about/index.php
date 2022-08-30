@@ -9,16 +9,13 @@
 
 <!-- PROFILE -->
 <div class="p-about-profile l-wrapper-sm">
-    <div class="p-about-profile__card flex"> 
+    <div class="p-about-profile__card l-flex"> 
         <img src="./image/profile-image.png" alt="アイコン画像" class="p-about-profile__card-image">
         <div class="p-about-profile__card-inner">
             <h3 class="p-about-profile__card-heading">Naoya Fujimoto</h3>
             <p class="p-about-profile__card-text">
                 奈良県生まれ奈良県育ちのエンジニア志望<br>
-                プログラムを書くことや新しい技術を勉強するのが好きです<br>
-                人と話したり話を聞いたりするのが好きです<br>
-                ものづくりと謎解きが好きで時々イラストも描きます<br>
-                よろしくお願いします！
+                プログラムを書くこと、新しい技術を勉強すること、人と話したり話を聞くこと、ものづくり、謎解きなど好きなものがたくさんあります！よく学び、よく作り、よく考えるタイプの人です！よろしくお願いします！
             </p>
         </div>
     </div>
@@ -31,7 +28,7 @@
         <h2 class="c-section-heading__english">MOTTO</h2>
     </div>
     
-    <div class="p-about-motto__container flex">
+    <div class="p-about-motto__container l-flex">
         <div class="p-about-motto__card">
             <div class="p-about-motto__card-heading">
                 <div class="p-about-motto__card-number">01</div>
@@ -86,7 +83,7 @@
                 <h3 class="p-about-career__box-heading"><span>勉強と部活動の両立</span></h3>
                 <p class="p-about-career__box-text">小中学校では5年生から5年間吹奏楽部に所属。勉強にも楽しんで積極的に取り組んでいました。小学校ではトランペットを担当、中学校ではチューバを担当しました。</p>
                 
-                <div class="p-about-career__award flex">
+                <div class="p-about-career__award l-flex">
                     <h4 class="p-about-career__award-heading">受賞歴</h4>
                     <p class="p-about-career__award-text">
                         第26回全日本小学校バンドフェスティバル 金賞<br>
@@ -123,7 +120,7 @@
                 <h3 class="p-about-career__box-heading"><span>1年間早稲田大学文化構想学部</span><span>に交換留学</span></h3>
                 <p class="p-about-career__box-text">大学3年時、学びの幅を広げるために早稲田大学文化構想学部に交換留学しました。また機械学習やデータ分析のコンペティションにも取り組み、データ分析のコンペティションでは賞をいただきました。</p>
                 
-                <div class="p-about-career__award flex">
+                <div class="p-about-career__award l-flex">
                     <h4 class="p-about-career__award-heading">受賞歴</h4>
                     <p class="p-about-career__award-text">第6回データビジネス創造コンテスト 入賞</p>
                 </div>
@@ -136,7 +133,7 @@
                 <h3 class="p-about-career__box-heading"><span>同志社大学にて研究に専念</span></h3>
                 <p class="p-about-career__box-text">実データの分析を多く経験しました。J1リーグのトラッキングデータやECサイトのPOSデータ、テレビCMの視聴履歴データ等の分析を行いました。背景分析/課題設定/分析/施策の提案までのフローを経験しました。</p>
                 
-                <div class="p-about-career__award flex">
+                <div class="p-about-career__award l-flex">
                     <h4 class="p-about-career__award-heading">受賞歴</h4>
                     <p class="p-about-career__award-text">第8回スポーツデータ解析コンペティション ポスター発表 最優秀賞</p>
                 </div>
@@ -163,7 +160,7 @@
             <div class="p-about-career__year p-about-career__year--yellow">VISION</div>
             <div class="p-about-career__inner">
                 <h3 class="p-about-career__box-heading p-about-career__box-heading--yellow"><span>Webエンジニアを目指して</span><span>勉強中！</span></h3>
-                <p class="p-about-career__box-text">Webの開発に必要な基盤知識を学習するために入校しました。現在は全てのカリキュラムを修了し、転職活動と並行してWebスクールのメンターとしてコーディングのフィードバックをお手伝いしています。</p>
+                <p class="p-about-career__box-text">キャリアの長期的な目標として、データサイエンスとWebエンジニアリングを高いレベルで扱えるエンジニアを目指しています。そのために今は多くの言語や開発環境に触れ、実務経験を通して自信を付けていきたいと考えています。</p>
             </div>
         </div>
     </div>
