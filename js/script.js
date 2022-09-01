@@ -1,14 +1,11 @@
 // WORKSとABOUTページのheaderに色付け
 const uri = new URL(window.location.href).pathname.slice(1);
-console.log(uri);
 $(window).on("load", function(){
 
-    if(uri === "works"){
+    if(uri === "portfolio/works/"){
         $('.js-works').addClass('is-recolor');
-        console.log("success works")
-    } else if(uri === "about"){
+    } else if(uri === "portfolio/about/"){
         $('.js-about').addClass('is-recolor');
-        console.log("success about")
     }
 
 });
@@ -18,7 +15,6 @@ $(window).on("scroll load resize", function(){
 
     const header_height = document.getElementById('js-height').clientHeight;
     const scroll = $(window).scrollTop();
-    console.log(scroll)
 
     if (scroll > header_height ) {
         $('.js-hide').addClass('is-hide');

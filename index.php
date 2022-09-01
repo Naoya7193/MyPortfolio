@@ -1,4 +1,4 @@
-<?php include 'inc/header.php'; ?>
+<?php $Path = "./"; include(dirname(__FILE__).'/inc/header.php'); ?>
 
 <!-- MV -->
 <section class="p-index-mv l-wrapper">
@@ -13,9 +13,9 @@
         <h2 class="c-section-heading__english">MESSAGE</h2>
     </div>
 
-    <p class="p-index-message__copy"><span>常に最適解を考えられる</span><span>エンジニアでありたい！</span></p>
+    <p class="p-index-message__copy"><span>常に最適解を考えられるエンジニアでありたい！</span></p>
     <p class="p-index-message__text">
-    エンジニアはプログラムを用いてアイデアを形にする職業です。しかし私はそれ以上に目に見えない部分が重要視される職業だと考えています。例えば魅力的なWebデザインを形にするとき、ユーザの環境に依存することなくサイトの魅力を伝えなければいけません。また要件に沿ったシステムを開発するとき、機能の実装と同じくらい運用や保守性について考える必要があります。私はエンジニアの「目には見えない工夫」や「な設計」を大切にします。魅力的なアイデアをワクワクするプロダクトに変える力になります。
+        エンジニアはプログラムを用いてアイデアを形にする職業です。しかし私はエンジニアは見た目の完成度以上に目に見えないところの緻密さが重要視される職業だと考えています。例えば魅力的なWebデザインを形にするとき、ユーザの環境に依存することなくサイトの魅力を伝えなければいけません。また要件に沿ったシステムを開発するとき、機能の実装と同じくらい運用や保守性について考える必要があります。私はエンジニアの「外からは見えない工夫」や「ロバストな設計」を大切にします。あなたの魅力的なアイデアをワクワクするプロダクトに変える力になりたいです。
     </p>
 </section>
 
@@ -32,7 +32,7 @@
             <h3 class="p-index-skill__card-heading">Web開発</h3>
             <p class="p-index-skill__card-text">
                 Web制作とWebアプリケーション開発の経験があります。Web制作では基本的なコーディングからWPのテーマ開発まで実装可能で、Webアプリケーション開発ではRuby on Railsを用いたアプリケーションの開発が可能です。またコードはGit上で管理し、環境構築にはDockerを使うこともあります。<br>
-                Web制作歴：8ヶ月　Webアプリケーション開発歴：6ヶ月
+                Web制作歴：11ヶ月　Webアプリケーション開発歴：6ヶ月
             </p>
             <div class="p-index-skill__tool">
                 <p class="p-index-skill__tool-heading">関連スキル</p>
@@ -98,7 +98,7 @@
     </div>
 
     <div class="p-index-works__button">
-        <a class="p-index-works__button-link p-index-works__button-link--red" href="/works">READ MORE</a>
+        <a class="p-index-works__button-link p-index-works__button-link--red" href="./works">READ MORE</a>
     </div>
 </section>
 
@@ -123,8 +123,8 @@
     </div>
 
     <div class="p-index-about__button">
-        <a class="p-index-about__button-link p-index-about__button-link--green" href="/about">READ MORE</a>
+        <a class="p-index-about__button-link p-index-about__button-link--green" href="./about">READ MORE</a>
     </div>
 </section>
 
-<?php include 'inc/footer.php'; ?>
+<?php $Path = "./"; include(dirname(__FILE__).'/inc/footer.php'); ?>

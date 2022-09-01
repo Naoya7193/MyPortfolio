@@ -23,3 +23,17 @@
         }
     }
 }
+
+.l-button-scroll{
+    position: fixed;
+    bottom: 1.5vw;
+    right: 1.5vw;
+    width: min(8.8vw,80px);
+    height: min(8.8vw,80px);
+
+    @include mixin.mq() {
+        width: min(15vw,70px);
+        height: min(15vw,70px);
+    }
+
+}

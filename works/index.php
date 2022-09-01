@@ -1,4 +1,4 @@
-<?php include '../inc/header.php'; ?>
+<?php $Path = "../"; include(dirname(__FILE__).'/../inc/header.php'); ?>
 
 <!-- MV -->
 <section class="p-works-mv l-wrapper">
@@ -259,4 +259,4 @@
 
 
 
-<?php include '../inc/footer.php'; ?>
+<?php $Path = "../"; include(dirname(__FILE__).'/../inc/footer.php'); ?>

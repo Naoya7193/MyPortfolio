@@ -1,4 +1,4 @@
-<?php include '../inc/header.php'; ?>
+<?php $Path = "../"; include(dirname(__FILE__).'/../inc/header.php'); ?>
 
 <!-- MV -->
 <section class="p-about-mv l-wrapper">
@@ -10,7 +10,7 @@
 <!-- PROFILE -->
 <div class="p-about-profile l-wrapper-sm">
     <div class="p-about-profile__card l-flex"> 
-        <img src="./image/profile-image.png" alt="アイコン画像" class="p-about-profile__card-image">
+        <img src="../image/profile-image.png" alt="アイコン画像" class="p-about-profile__card-image">
         <div class="p-about-profile__card-inner">
             <h3 class="p-about-profile__card-heading">Naoya Fujimoto</h3>
             <p class="p-about-profile__card-text">
@@ -117,7 +117,7 @@
         <div class="p-about-career__box">
             <div class="p-about-career__year">2017</div>
             <div class="p-about-career__inner">
-                <h3 class="p-about-career__box-heading"><span>1年間早稲田大学文化構想学部</span><span>に交換留学</span></h3>
+                <h3 class="p-about-career__box-heading"><span>1年間早稲田大学文化構想学部に交換留学</span></h3>
                 <p class="p-about-career__box-text">大学3年時、学びの幅を広げるために早稲田大学文化構想学部に交換留学しました。また機械学習やデータ分析のコンペティションにも取り組み、データ分析のコンペティションでは賞をいただきました。</p>
                 
                 <div class="p-about-career__award l-flex">
@@ -167,4 +167,4 @@
 
 </section>
 
-<?php include '../inc/footer.php'; ?>
+<?php $Path = "../"; include(dirname(__FILE__).'/../inc/footer.php'); ?>

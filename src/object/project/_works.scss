@@ -14,10 +14,12 @@
     margin-bottom: clamp(70px,8.3vw,115px);
 
     @include mixin.mq() {
-        aspect-ratio: 1/1;
-        width: 100%;
+        aspect-ratio: unset;
+        width: 100vw;
+        height: 100vw;
         max-height: 620px;
         background-size: cover;
+        margin-bottom: min(30vw,120px);
     }
 
     &__heading{
@@ -69,6 +71,7 @@
             min-width: unset;
             width: 100%;
             max-width: 540px;
+            height: min(55.8vw,324px);
         }
 
         &:hover{
@@ -79,6 +82,7 @@
             display: flex;
             justify-content: center;
             position: relative;
+            height: 100%;
 
             &::before{
                 position: absolute;
@@ -94,6 +98,7 @@
 
         &-image{
             width: 100%;
+            object-fit: contain;
         }
 
         &-heading{

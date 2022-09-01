@@ -115,8 +115,9 @@
     aspect-ratio: 1267/665;
 
     @include mixin.mq() {
-        aspect-ratio: 1/1;
-        width: 100%;
+        aspect-ratio: unset;
+        width: 100vw;
+        height: 100vw;
         max-height: 620px;
     }
 
@@ -176,29 +177,10 @@
         margin-bottom: clamp(42px,4.5vw,90px);
         width: fit-content;
         line-height: 1.5;
+        white-space: wrap;
 
         span{
-            padding: 0 .5em;
             background-image: linear-gradient(rgba(0 0 0/0) 70%, color.$c-blue-lighter 0%);
-            white-space: nowrap;
-
-            &:first-child{
-                padding-right: unset;
-                @include mixin.mq() {
-                    padding: unset;
-                }
-            }
-
-            &:last-child{
-                padding-left: unset;
-                @include mixin.mq() {
-                    padding: unset;
-                }
-            }
-        }
-
-        @include mixin.mq() {
-            // padding-left: .4em;
         }
     }
 
@@ -248,9 +230,11 @@
         max-height: clamp(340px,38vw,455px);
 
         @include mixin.mq() {
+            width: 100%;
+            object-fit: cover;
             margin-top: 20px;
-            padding-bottom: 20px;
-            aspect-ratio: 349/176;
+            aspect-ratio: unset;
+            height: max(38.8vw,194px);
             max-height: 294px;
         }
     }
@@ -504,7 +488,7 @@
             width: 100%;
             align-items: center;
             margin-bottom: 8vw;
-            gap: min(5.6vw,40px);
+            gap: unset;
         }
 
         &-image{
@@ -514,6 +498,7 @@
             @include mixin.mq() {
                 width: 63%;
                 max-width: 320px;
+                margin-bottom: 5.3vw;
             }
         }
 
